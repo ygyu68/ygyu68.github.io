@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://ygyu68.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ygyu68.github.io/" rel="alternate" type="text/html" /><updated>2021-05-05T16:30:50+09:00</updated><id>https://ygyu68.github.io/</id><title type="html">Being a Data Scientist</title><subtitle>R / Python</subtitle><entry><title type="html">통계학 강좌(1) - 통계학의 기본</title><link href="https://ygyu68.github.io/statistics-basic" rel="alternate" type="text/html" title="통계학 강좌(1) - 통계학의 기본" /><published>2021-05-05T01:40:00+09:00</published><updated>2021-05-05T01:40:00+09:00</updated><id>https://ygyu68.github.io/statistics-basic</id><content type="html" xml:base="https://ygyu68.github.io/statistics-basic">&lt;p&gt;이 글은 통계학 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="statistics" /><summary type="html">이 글은 통계학 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">R 강좌(1) - R 기본</title><link href="https://ygyu68.github.io/R-basic" rel="alternate" type="text/html" title="R 강좌(1) - R 기본" /><published>2021-05-05T01:40:00+09:00</published><updated>2021-05-05T01:40:00+09:00</updated><id>https://ygyu68.github.io/R-basic</id><content type="html" xml:base="https://ygyu68.github.io/R-basic">&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="r" /><summary type="html">이 글은 R 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">Python 강좌(2) - Python 제어문</title><link href="https://ygyu68.github.io/python-control-statement" rel="alternate" type="text/html" title="Python 강좌(2) - Python 제어문" /><published>2021-05-05T01:40:00+09:00</published><updated>2021-05-05T01:40:00+09:00</updated><id>https://ygyu68.github.io/python-control-statement</id><content type="html" xml:base="https://ygyu68.github.io/python-control-statement">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 내용은 나중에 여기에 추가! &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;파이썬 관련 두번째 포스팅.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">내용은 나중에 여기에 추가! Python 강좌(1) - Python 기본 Python 강좌(2) - Python 제어문</summary></entry><entry><title type="html">Python 강좌(1) - Python 기본</title><link href="https://ygyu68.github.io/python-basic" rel="alternate" type="text/html" title="Python 강좌(1) - Python 기본" /><published>2021-05-05T01:40:00+09:00</published><updated>2021-05-05T01:40:00+09:00</updated><id>https://ygyu68.github.io/python-basic</id><content type="html" xml:base="https://ygyu68.github.io/python-basic">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 내용은 나중에 여기에 추가! &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">내용은 나중에 여기에 추가! Python 강좌(1) - Python 기본 Python 강좌(2) - Python 제어문</summary></entry></feed>

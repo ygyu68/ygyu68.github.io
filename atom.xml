@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>R / Python</description>
+    <link>
+    https://ygyu68.github.io</link>
+    
+      
+      <item>
+        <title>통계학 강좌(1) - 통계학의 기본</title>
+        
+          <description>&lt;p&gt;이 글은 통계학 관련 첫 포스팅 입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 05 May 2021 01:40:00 +0900</pubDate>
+        <link>
+        https://ygyu68.github.io/statistics-basic</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/statistics-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>R 강좌(1) - R 기본</title>
+        
+          <description>&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 05 May 2021 01:40:00 +0900</pubDate>
+        <link>
+        https://ygyu68.github.io/R-basic</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/R-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Python 강좌(2) - Python 제어문</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 내용은 나중에 여기에 추가! &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 05 May 2021 01:40:00 +0900</pubDate>
+        <link>
+        https://ygyu68.github.io/python-control-statement</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/python-control-statement</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Python 강좌(1) - Python 기본</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 내용은 나중에 여기에 추가! &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 05 May 2021 01:40:00 +0900</pubDate>
+        <link>
+        https://ygyu68.github.io/python-basic</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/python-basic</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
