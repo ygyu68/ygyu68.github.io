@@ -60,8 +60,8 @@
 " />
     <meta property="og:url" content="https://ygyu68.github.io/R-basic" />
     <meta property="og:image" content="https://ygyu68.github.io/assets/built/images/statistics.jpg" />
-    <meta property="article:publisher" content="https://www.facebook.com/xbvc6682@naver.com" />
-    <meta property="article:author" content="https://www.facebook.com/xbvc6682@naver.com" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
     <meta property="article:published_time" content="2021-05-05T01:40:00+09:00" />
     <meta property="article:modified_time" content="2021-05-05T01:40:00+09:00" />
     <meta property="article:tag" content="R" />
@@ -159,9 +159,6 @@ into the {body} of the default.hbs template -->
     <div class="site-nav-right">
         <div class="social-links">
             
-                <a class="social-link social-link-fb" href="https://facebook.com/xbvc6682@naver.com" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
-</a>
-            
             
         </div>
         <!-- (추가) Subscribe를 Search로 -->
@@ -209,39 +206,6 @@ into the {body} of the default.hbs template -->
                 </div>
             </section>
 
-
-
-            <!-- Email subscribe form at the bottom of the page -->
-
-        <!-- (수정) Subscriber 없애기
-            
-                <section class="subscribe-form">
-                    <h3 class="subscribe-form-title">Subscribe to Being a Data Scientist</h3>
-                    <p>Get the latest posts delivered right to your inbox</p>
-                    <!-- (추가/변경) subscribe 버튼을 search 버튼으로 -->
-<span id="searchform" method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  />
-    <input class="location" type="hidden" name="location"  />
-    <input class="referrer" type="hidden" name="referrer"  />
-
-    <div class="form-group">
-        <input class="subscribe-email" onkeyup="myFunc()"
-               id="searchtext" type="text" name="searchtext"
-               placeholder="Search..." />
-    </div>
-    <script type="text/javascript">
-        function myFunc() {
-            if(event.keyCode == 13) {
-                var url = encodeURIComponent($("#searchtext").val());
-                location.href = "/search.html?query=" + url;
-            }
-        }
-    </script>
-</span>
-                </section>
-            
-            -->
-
             <footer class="post-full-footer">
                 <!-- Everything inside the #author tags pulls data from the author -->
                 <!-- #author-->
@@ -265,7 +229,7 @@ into the {body} of the default.hbs template -->
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
-                            s.src = 'https://xxxxxxxx.disqus.com/embed.js';
+                            s.src = 'https://ygyu68.disqus.com/embed.js';
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
@@ -434,7 +398,7 @@ into the {body} of the default.hbs template -->
                     <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
                 <nav class="site-footer-nav">
                     <a href="/">Latest Posts</a>
-                    <a href="https://facebook.com/xbvc6682@naver.com" target="_blank" rel="noopener">Facebook</a>
+                    
                     
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
                 </nav>
@@ -449,7 +413,7 @@ into the {body} of the default.hbs template -->
         <a class="subscribe-overlay-close" href="#"></a>
         <div class="subscribe-overlay-content">
             
-            <h1 class="subscribe-overlay-title">Search by Keyword <!--(추가) 개인적으로 없앰    Being a Data Scientist--></h1>
+            <h1 class="subscribe-overlay-title">Search by Keyword <!--(추가) 개인적으로 없앰 Being a Data Scientist--></h1>
             <p class="subscribe-overlay-description">
                 <!-- lunr.js를 이용한 posts 검색--> 키워드를 입력하세요 </p>
             <!-- (추가/변경) subscribe 버튼을 search 버튼으로 -->
@@ -476,7 +440,8 @@ into the {body} of the default.hbs template -->
     </div>
     
 
-    <!-- (추가) 댓글기능 -->
+    <!-- (추가) 댓글기능 아마 이거 아닌듯 -->
+    <!--
     <div id="disqus_thread"></div>
     <script>
         /**
@@ -496,7 +461,7 @@ into the {body} of the default.hbs template -->
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+    -->
     <!-- highlight.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
     <script>$(document).ready(function() {
