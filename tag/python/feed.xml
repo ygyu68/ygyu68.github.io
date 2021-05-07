@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://ygyu68.github.io/tag/python/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ygyu68.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-06T13:23:25+09:00</updated>
+  <updated>2021-05-07T04:44:36+00:00</updated>
   <id>https://ygyu68.github.io/tag/python/feed.xml</id>
 
   
@@ -32,12 +32,12 @@
 
   
     <entry>
-      <title type="html">Python 강좌(1) - Python 기본</title>
-      <link href="https://ygyu68.github.io/python-basic" rel="alternate" type="text/html" title="Python 강좌(1) - Python 기본" />
-      <published>2021-05-05T01:40:00+09:00</published>
-      <updated>2021-05-05T01:40:00+09:00</updated>
-      <id>https://ygyu68.github.io/python-basic</id>
-      <content type="html" xml:base="https://ygyu68.github.io/python-basic">&lt;!--
+      <title type="html">Python 강좌(2) - Python 제어문</title>
+      <link href="https://ygyu68.github.io/python-control-statement" rel="alternate" type="text/html" title="Python 강좌(2) - Python 제어문" />
+      <published>2021-05-04T16:40:00+00:00</published>
+      <updated>2021-05-04T16:40:00+00:00</updated>
+      <id>https://ygyu68.github.io/python-control-statement</id>
+      <content type="html" xml:base="https://ygyu68.github.io/python-control-statement">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
@@ -47,13 +47,9 @@
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;
+&lt;p&gt;파이썬 관련 두번째 포스팅.&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;syntaxHighlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;script src=&quot;https://gist.github.com/ygyu68/6f0e5e27d10271787d0e9cfe8dc38837.js&quot;&gt;&lt;/script&gt;</content>
 
       
       
@@ -82,12 +78,12 @@
     </entry>
   
     <entry>
-      <title type="html">Python 강좌(2) - Python 제어문</title>
-      <link href="https://ygyu68.github.io/python-control-statement" rel="alternate" type="text/html" title="Python 강좌(2) - Python 제어문" />
-      <published>2021-05-05T01:40:00+09:00</published>
-      <updated>2021-05-05T01:40:00+09:00</updated>
-      <id>https://ygyu68.github.io/python-control-statement</id>
-      <content type="html" xml:base="https://ygyu68.github.io/python-control-statement">&lt;!--
+      <title type="html">Python 강좌(1) - Python 기본</title>
+      <link href="https://ygyu68.github.io/python-basic" rel="alternate" type="text/html" title="Python 강좌(1) - Python 기본" />
+      <published>2021-05-04T16:40:00+00:00</published>
+      <updated>2021-05-04T16:40:00+00:00</updated>
+      <id>https://ygyu68.github.io/python-basic</id>
+      <content type="html" xml:base="https://ygyu68.github.io/python-basic">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
@@ -97,9 +93,13 @@
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;파이썬 관련 두번째 포스팅.&lt;/p&gt;
+&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/ygyu68/6f0e5e27d10271787d0e9cfe8dc38837.js&quot;&gt;&lt;/script&gt;</content>
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;syntaxHighlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       
