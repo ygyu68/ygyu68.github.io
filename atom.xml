@@ -42,9 +42,9 @@
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 내용은 나중에 여기에 추가! &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 코드 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;백준 1427번 소트인사이드 (파이썬)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -59,15 +59,15 @@
     
       
       <item>
-        <title>Python 강좌(1) - Python 기본</title>
+        <title>백준 1427번 소트인사이드 (파이썬)</title>
         
           <description>&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 내용은 나중에 여기에 추가! &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 코드 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;백준 1427번 소트인사이드 (파이썬)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
