@@ -2,9 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> - Articles</title>
-    <description>R / Python</description>
+    <description>기계공학과 학생의 데이터 과학 공부 일지</description>
     <link>
     https://ygyu68.github.io</link>
+    
+      
+      <item>
+        <title>백준 1181 단어정렬 (파이썬)</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 07 May 2021 16:40:00 +0000</pubDate>
+        <link>
+        https://ygyu68.github.io/baekjoon-1181</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/baekjoon-1181</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>백준 11651 좌표정렬하기2 (파이썬)</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 07 May 2021 16:40:00 +0000</pubDate>
+        <link>
+        https://ygyu68.github.io/baekjoon-11651</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/baekjoon-11651</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>백준 10814 나이순정렬 (파이썬)</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 07 May 2021 16:40:00 +0000</pubDate>
+        <link>
+        https://ygyu68.github.io/baekjoon-10814</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/baekjoon-10814</guid>
+      </item>
+      
     
       
       <item>
@@ -16,7 +94,7 @@
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬 내포함수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬: 내포함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;내포함수&quot;&gt;내포함수&lt;/h1&gt;
 
@@ -31,7 +109,7 @@
     
       
       <item>
-        <title>백준 1181 단어 정렬 (파이썬)</title>
+        <title>백준 11650 좌표정렬하기 (파이썬)</title>
         
           <description>&lt;!--
 새롭게 추가한 내용 (목차 만들기)
@@ -40,59 +118,10 @@
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        
-        <pubDate>Fri, 07 May 2021 16:40:00 +0000</pubDate>
-        <link>
-        https://ygyu68.github.io/baekjoon-1181</link>
-        <guid isPermaLink="true">https://ygyu68.github.io/baekjoon-1181</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>백준 11651 좌표 정렬하기2 (파이썬)</title>
-        
-          <description>&lt;!--
-새롭게 추가한 내용 (목차 만들기)
---&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        
-        <pubDate>Fri, 07 May 2021 16:40:00 +0000</pubDate>
-        <link>
-        https://ygyu68.github.io/baekjoon-11651</link>
-        <guid isPermaLink="true">https://ygyu68.github.io/baekjoon-11651</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>백준 11650 좌표 정렬하기 (파이썬)</title>
-        
-          <description>&lt;!--
-새롭게 추가한 내용 (목차 만들기)
---&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -120,20 +149,6 @@
     
       
       <item>
-        <title>R 강좌(1) - R 기본</title>
-        
-          <description>&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;
-</description>
-        
-        <pubDate>Tue, 04 May 2021 16:40:00 +0000</pubDate>
-        <link>
-        https://ygyu68.github.io/R-basic</link>
-        <guid isPermaLink="true">https://ygyu68.github.io/R-basic</guid>
-      </item>
-      
-    
-      
-      <item>
         <title>백준 1427번 소트인사이드 (파이썬)</title>
         
           <description>&lt;!--
@@ -143,9 +158,10 @@
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -154,6 +170,20 @@
         <link>
         https://ygyu68.github.io/baekjoon-1427</link>
         <guid isPermaLink="true">https://ygyu68.github.io/baekjoon-1427</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>R 강좌(1) - R 기본</title>
+        
+          <description>&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 04 May 2021 16:40:00 +0000</pubDate>
+        <link>
+        https://ygyu68.github.io/R-basic</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/R-basic</guid>
       </item>
       
     
