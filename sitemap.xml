@@ -4,6 +4,38 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://ygyu68.github.io/syntax-comprehension.html</loc>
+        
+        <lastmod>2021-05-08T01:40:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://ygyu68.github.io/baekjoon-1181.html</loc>
+        
+        <lastmod>2021-05-08T01:40:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://ygyu68.github.io/baekjoon-11651.html</loc>
         
         <lastmod>2021-05-08T01:40:00+09:00</lastmod>

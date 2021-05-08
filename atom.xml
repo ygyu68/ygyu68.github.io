@@ -8,17 +8,66 @@
     
       
       <item>
+        <title>파이썬 내포 함수(Comprehension)</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬 내포함수&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;내포함수&quot;&gt;내포함수&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Sat, 08 May 2021 01:40:00 +0900</pubDate>
+        <link>
+        https://ygyu68.github.io/syntax-comprehension</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/syntax-comprehension</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>백준 1181 단어 정렬 (파이썬)</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sat, 08 May 2021 01:40:00 +0900</pubDate>
+        <link>
+        https://ygyu68.github.io/baekjoon-1181</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/baekjoon-1181</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>백준 11651 좌표 정렬하기2 (파이썬)</title>
         
           <description>&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 문제 풀이 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 1427번: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -38,11 +87,12 @@
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 문제 풀이 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 1427번: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -90,11 +140,12 @@
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 문제 풀이 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 1427번: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
