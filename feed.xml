@@ -1,12 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://ygyu68.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ygyu68.github.io/" rel="alternate" type="text/html" /><updated>2021-05-08T03:40:17+00:00</updated><id>https://ygyu68.github.io/</id><title type="html">Being a Data Scientist</title><subtitle>R / Python</subtitle><entry><title type="html">백준 11651 좌표 정렬하기2 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-11651" rel="alternate" type="text/html" title="백준 11651 좌표 정렬하기2 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-11651</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-11651">&lt;!--
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://ygyu68.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ygyu68.github.io/" rel="alternate" type="text/html" /><updated>2021-05-08T05:44:19+00:00</updated><id>https://ygyu68.github.io/</id><title type="html">Being a Data Scientist</title><subtitle>R / Python</subtitle><entry><title type="html">파이썬 내포 함수(Comprehension)</title><link href="https://ygyu68.github.io/syntax-comprehension" rel="alternate" type="text/html" title="파이썬 내포 함수(Comprehension)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/syntax-comprehension</id><content type="html" xml:base="https://ygyu68.github.io/syntax-comprehension">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 문제 풀이 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 1427번: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬 내포함수&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;내포함수&quot;&gt;내포함수&lt;/h1&gt;
+
+&lt;p&gt;파이썬에서는 각종 &lt;span style=&quot;color:red&quot;&gt;내포함수&lt;/span&gt;를 사용할 수 있다. 예를 들어,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;와 같은 코드블록을 아래와 같이 표현하는 것이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 2개의 코드블록의 결과는 모두 &lt;code class=&quot;highlighter-rouge&quot;&gt;[0, 1, 4, 9, 16]&lt;/code&gt;이 된다. 또한 함수 &lt;code class=&quot;highlighter-rouge&quot;&gt;sum()&lt;/code&gt;을 통해 주어진 리스트(llist)의 합을 구할 수 있다. 즉, &lt;code class=&quot;highlighter-rouge&quot;&gt;sum([x**2 for x in range(5)])&lt;/code&gt;  의 결과는 30이 된다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">다른 자료 보러가기👀 파이썬 내포함수 내포함수</summary></entry><entry><title type="html">백준 1181 단어 정렬 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-1181" rel="alternate" type="text/html" title="백준 1181 단어 정렬 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-1181</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-1181">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek1181.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;알파벳 소문자로 이루어진 N개의 단어가 들어오면 아래와 같은 조건에 따라 정렬하는 프로그램을 작성하시오.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;길이가 짧은 것부터&lt;/li&gt;
+  &lt;li&gt;길이가 같으면 사전 순으로&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;입력&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;첫째 줄에 단어의 개수 N이 주어진다. (1 ≤ N ≤ 20,000) 둘째 줄부터 N개의 줄에 걸쳐 알파벳 소문자로 이루어진 단어가 한 줄에 하나씩 주어진다. 주어지는 문자열의 길이는 50을 넘지 않는다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;조건에 따라 정렬하여 단어들을 출력한다. 단, 같은 단어가 여러 번 입력된 경우에는 한 번씩만 출력한다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;✨&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#1181 단어 정렬&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;set1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;👍&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이 팁&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;우선, &lt;code class=&quot;highlighter-rouge&quot;&gt;set&lt;/code&gt;을 통해 중복값을 없애주었다. 그리고 난 뒤  &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted()&lt;/code&gt;를 통해 길이와 상관없이 알파벳을 기준으로 정렬해주고 다시 한번 &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted(value, key=len)&lt;/code&gt;을 통해 길이를 기준으로 정렬을 해주었다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표 정렬하기 백준 #11651: 좌표 정렬하기2 백준 #1181: 단어 정렬</summary></entry><entry><title type="html">백준 11651 좌표 정렬하기2 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-11651" rel="alternate" type="text/html" title="백준 11651 좌표 정렬하기2 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-11651</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-11651">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek11651.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -57,15 +132,16 @@
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;일반적으로 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">백준 문제 풀이 관련 포스팅 백준 1427번: 소트인사이드 백준 11650: 좌표 정렬하기 백준 11651: 좌표 정렬하기2</summary></entry><entry><title type="html">백준 11650 좌표 정렬하기 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-11650" rel="alternate" type="text/html" title="백준 11650 좌표 정렬하기 (파이썬)" /><published>2021-05-06T16:40:00+00:00</published><updated>2021-05-06T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-11650</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-11650">&lt;!--
+&lt;p&gt;일반적으로 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표 정렬하기 백준 #11651: 좌표 정렬하기2 백준 #1181: 단어 정렬</summary></entry><entry><title type="html">백준 11650 좌표 정렬하기 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-11650" rel="alternate" type="text/html" title="백준 11650 좌표 정렬하기 (파이썬)" /><published>2021-05-06T16:40:00+00:00</published><updated>2021-05-06T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-11650</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-11650">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 문제 풀이 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 1427번: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek11650.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -115,15 +191,16 @@
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;일반적으로 백준 문제 중에서 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">백준 문제 풀이 관련 포스팅 백준 1427번: 소트인사이드 백준 11650: 좌표 정렬하기 백준 11651: 좌표 정렬하기2</summary></entry><entry><title type="html">통계학 강좌(1) - 통계학의 기본</title><link href="https://ygyu68.github.io/statistics-basic" rel="alternate" type="text/html" title="통계학 강좌(1) - 통계학의 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/statistics-basic</id><content type="html" xml:base="https://ygyu68.github.io/statistics-basic">&lt;p&gt;이 글은 통계학 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="statistics" /><summary type="html">이 글은 통계학 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">R 강좌(1) - R 기본</title><link href="https://ygyu68.github.io/R-basic" rel="alternate" type="text/html" title="R 강좌(1) - R 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/R-basic</id><content type="html" xml:base="https://ygyu68.github.io/R-basic">&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="r" /><summary type="html">이 글은 R 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">백준 1427번 소트인사이드 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-1427" rel="alternate" type="text/html" title="백준 1427번 소트인사이드 (파이썬)" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-1427</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-1427">&lt;!--
+&lt;p&gt;일반적으로 백준 문제 중에서 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표 정렬하기 백준 #11651: 좌표 정렬하기2 백준 #1181: 단어 정렬</summary></entry><entry><title type="html">통계학 강좌(1) - 통계학의 기본</title><link href="https://ygyu68.github.io/statistics-basic" rel="alternate" type="text/html" title="통계학 강좌(1) - 통계학의 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/statistics-basic</id><content type="html" xml:base="https://ygyu68.github.io/statistics-basic">&lt;p&gt;이 글은 통계학 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="statistics" /><summary type="html">이 글은 통계학 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">R 강좌(1) - R 기본</title><link href="https://ygyu68.github.io/R-basic" rel="alternate" type="text/html" title="R 강좌(1) - R 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/R-basic</id><content type="html" xml:base="https://ygyu68.github.io/R-basic">&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="r" /><summary type="html">이 글은 R 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">백준 1427번 소트인사이드 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-1427" rel="alternate" type="text/html" title="백준 1427번 소트인사이드 (파이썬)" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-1427</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-1427">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 백준 문제 풀이 관련 포스팅 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 1427번: 소트인사이드&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표 정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표 정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어 정렬&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek1427.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -150,4 +227,4 @@
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이&lt;/span&gt;&lt;/strong&gt;
 &lt;script src=&quot;https://gist.github.com/ygyu68/0dbbfb448bb1cda237685ba2b6a32e7f.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;주의사항&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">백준 문제 풀이 관련 포스팅 백준 1427번: 소트인사이드 백준 11650: 좌표 정렬하기 백준 11651: 좌표 정렬하기2</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;주의사항&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="python" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표 정렬하기 백준 #11651: 좌표 정렬하기2 백준 #1181: 단어 정렬</summary></entry></feed>
