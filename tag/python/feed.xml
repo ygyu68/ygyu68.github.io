@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://ygyu68.github.io/tag/python/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ygyu68.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-08T14:41:44+09:00</updated>
+  <updated>2021-05-08T05:55:50+00:00</updated>
   <id>https://ygyu68.github.io/tag/python/feed.xml</id>
 
   
@@ -32,10 +32,68 @@
 
   
     <entry>
+      <title type="html">파이썬 내포 함수(Comprehension)</title>
+      <link href="https://ygyu68.github.io/syntax-comprehension" rel="alternate" type="text/html" title="파이썬 내포 함수(Comprehension)" />
+      <published>2021-05-07T16:40:00+00:00</published>
+      <updated>2021-05-07T16:40:00+00:00</updated>
+      <id>https://ygyu68.github.io/syntax-comprehension</id>
+      <content type="html" xml:base="https://ygyu68.github.io/syntax-comprehension">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬 내포함수&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;내포함수&quot;&gt;내포함수&lt;/h1&gt;
+
+&lt;p&gt;파이썬에서는 각종 &lt;span style=&quot;color:red&quot;&gt;내포함수&lt;/span&gt;를 사용할 수 있다. 예를 들어,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;와 같은 코드블록을 아래와 같이 표현하는 것이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 2개의 코드블록의 결과는 모두 &lt;code class=&quot;highlighter-rouge&quot;&gt;[0, 1, 4, 9, 16]&lt;/code&gt;이 된다. 또한 함수 &lt;code class=&quot;highlighter-rouge&quot;&gt;sum()&lt;/code&gt;을 통해 주어진 리스트(llist)의 합을 구할 수 있다. 즉, &lt;code class=&quot;highlighter-rouge&quot;&gt;sum([x**2 for x in range(5)])&lt;/code&gt;  의 결과는 30이 된다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Gyuseok Hwang</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html">다른 자료 보러가기👀 파이썬 내포함수 내포함수</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">백준 1181 단어 정렬 (파이썬)</title>
       <link href="https://ygyu68.github.io/baekjoon-1181" rel="alternate" type="text/html" title="백준 1181 단어 정렬 (파이썬)" />
-      <published>2021-05-08T01:40:00+09:00</published>
-      <updated>2021-05-08T01:40:00+09:00</updated>
+      <published>2021-05-07T16:40:00+00:00</published>
+      <updated>2021-05-07T16:40:00+00:00</updated>
       <id>https://ygyu68.github.io/baekjoon-1181</id>
       <content type="html" xml:base="https://ygyu68.github.io/baekjoon-1181">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
@@ -118,8 +176,8 @@
     <entry>
       <title type="html">백준 11651 좌표 정렬하기2 (파이썬)</title>
       <link href="https://ygyu68.github.io/baekjoon-11651" rel="alternate" type="text/html" title="백준 11651 좌표 정렬하기2 (파이썬)" />
-      <published>2021-05-08T01:40:00+09:00</published>
-      <updated>2021-05-08T01:40:00+09:00</updated>
+      <published>2021-05-07T16:40:00+00:00</published>
+      <updated>2021-05-07T16:40:00+00:00</updated>
       <id>https://ygyu68.github.io/baekjoon-11651</id>
       <content type="html" xml:base="https://ygyu68.github.io/baekjoon-11651">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
@@ -210,68 +268,10 @@
     </entry>
   
     <entry>
-      <title type="html">파이썬 내포 함수(Comprehension)</title>
-      <link href="https://ygyu68.github.io/syntax-comprehension" rel="alternate" type="text/html" title="파이썬 내포 함수(Comprehension)" />
-      <published>2021-05-08T01:40:00+09:00</published>
-      <updated>2021-05-08T01:40:00+09:00</updated>
-      <id>https://ygyu68.github.io/syntax-comprehension</id>
-      <content type="html" xml:base="https://ygyu68.github.io/syntax-comprehension">&lt;!--
-새롭게 추가한 내용 (목차 만들기)
---&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬 내포함수&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;내포함수&quot;&gt;내포함수&lt;/h1&gt;
-
-&lt;p&gt;파이썬에서는 각종 &lt;span style=&quot;color:red&quot;&gt;내포함수&lt;/span&gt;를 사용할 수 있다. 예를 들어,&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;와 같은 코드블록을 아래와 같이 표현하는 것이다.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위 2개의 코드블록의 결과는 모두 &lt;code class=&quot;highlighter-rouge&quot;&gt;[0, 1, 4, 9, 16]&lt;/code&gt;이 된다. 또한 함수 &lt;code class=&quot;highlighter-rouge&quot;&gt;sum()&lt;/code&gt;을 통해 주어진 리스트(llist)의 합을 구할 수 있다. 즉, &lt;code class=&quot;highlighter-rouge&quot;&gt;sum([x**2 for x in range(5)])&lt;/code&gt;  의 결과는 30이 된다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Gyuseok Hwang</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="python" />
-      
-
-      
-        <summary type="html">다른 자료 보러가기👀 파이썬 내포함수 내포함수</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">백준 11650 좌표 정렬하기 (파이썬)</title>
       <link href="https://ygyu68.github.io/baekjoon-11650" rel="alternate" type="text/html" title="백준 11650 좌표 정렬하기 (파이썬)" />
-      <published>2021-05-07T01:40:00+09:00</published>
-      <updated>2021-05-07T01:40:00+09:00</updated>
+      <published>2021-05-06T16:40:00+00:00</published>
+      <updated>2021-05-06T16:40:00+00:00</updated>
       <id>https://ygyu68.github.io/baekjoon-11650</id>
       <content type="html" xml:base="https://ygyu68.github.io/baekjoon-11650">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
@@ -363,8 +363,8 @@
     <entry>
       <title type="html">백준 1427번 소트인사이드 (파이썬)</title>
       <link href="https://ygyu68.github.io/baekjoon-1427" rel="alternate" type="text/html" title="백준 1427번 소트인사이드 (파이썬)" />
-      <published>2021-05-05T01:40:00+09:00</published>
-      <updated>2021-05-05T01:40:00+09:00</updated>
+      <published>2021-05-04T16:40:00+00:00</published>
+      <updated>2021-05-04T16:40:00+00:00</updated>
       <id>https://ygyu68.github.io/baekjoon-1427</id>
       <content type="html" xml:base="https://ygyu68.github.io/baekjoon-1427">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
