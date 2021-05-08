@@ -190,11 +190,20 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "baekjoon-11651": {
+        "title": "백준 11651 좌표 정렬하기2 (파이썬)",
+            "author": "ygyu68",
+            "category": "",
+            "content": " 백준 문제 풀이 관련 포스팅     백준 1427번: 소트인사이드    백준 11650: 좌표 정렬하기    백준 11651: 좌표 정렬하기2  문제2차원 평면 위의 점 N개가 주어진다. 좌표를 y좌표가 증가하는 순으로, y좌표가 같으면 x좌표가 증가하는 순서로 정렬한 다음 출력하는 프로그램을 작성하시오.  입력첫째 줄에 점의 개수 N (1 ≤ N ≤ 100,000)이 주어진다. 둘째 줄부터 N개의 줄에는 i번점의 위치 xi와 yi가 주어진다. (-100,000 ≤ xi, yi ≤ 100,000) 좌표는 항상 정수이고, 위치가 같은 두 점은 없다.  출력첫째 줄부터 N개의 줄에 점을 정렬한 결과를 출력한다.✨풀이#11651 좌표 정렬하기 2import sysN=int(sys.stdin.readline())list1=[]for _ in range(N):    x, y = map(int, sys.stdin.readline().split())    list1.append((y,x))for i in sorted(list1):    print(i[1],i[0])🤦‍♀️주의사항아래와 같이 단순히 N=int(input())을 쓰게되면 시간초과 에러가 나왔다.N=int(input())list1=[]for _ in range(N):    x, y = map(int, input().split())    list1.append((y,x))for i in sorted(list1):    print(i[1],i[0])일반적으로 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.",
+        "url": "/baekjoon-11651"
+    }
+    ,
+    
     "baekjoon-11650": {
         "title": "백준 11650 좌표 정렬하기 (파이썬)",
             "author": "ygyu68",
             "category": "",
-            "content": " 백준 문제 풀이 관련 포스팅     백준 1427번: 소트인사이드    백준 11650: 좌표 정렬하기  문제2차원 평면 위의 점 N개가 주어진다. 좌표를 x좌표가 증가하는 순으로, x좌표가 같으면 y좌표가 증가하는 순서로 정렬한 다음 출력하는 프로그램을 작성하시오.  입력첫째 줄에 점의 개수 N (1 ≤ N ≤ 100,000)이 주어진다. 둘째 줄부터 N개의 줄에는 i번점의 위치 xi와 yi가 주어진다. (-100,000 ≤ xi, yi ≤ 100,000) 좌표는 항상 정수이고, 위치가 같은 두 점은 없다.  출력첫째 줄부터 N개의 줄에 점을 정렬한 결과를 출력한다.풀이import sysN=int(sys.stdin.readline())list1=[]for _ in range(N):    x, y = map(int, sys.stdin.readline().split())    list1.append((x,y))for i in sorted(list1):    print(i[0],i[1])주의사항아래와 같이 단순히 N=int(input())을 쓰게되면 시간초과 에러가 나왔다.N=int(input())list1=[]for _ in range(N):    x, y = map(int, input().split())    list1.append((x,y))for i in sorted(list1):    print(i[0],i[1])일반적으로 백준 문제 중에서 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.",
+            "content": " 백준 문제 풀이 관련 포스팅     백준 1427번: 소트인사이드    백준 11650: 좌표 정렬하기    백준 11651: 좌표 정렬하기2  문제2차원 평면 위의 점 N개가 주어진다. 좌표를 x좌표가 증가하는 순으로, x좌표가 같으면 y좌표가 증가하는 순서로 정렬한 다음 출력하는 프로그램을 작성하시오.  입력첫째 줄에 점의 개수 N (1 ≤ N ≤ 100,000)이 주어진다. 둘째 줄부터 N개의 줄에는 i번점의 위치 xi와 yi가 주어진다. (-100,000 ≤ xi, yi ≤ 100,000) 좌표는 항상 정수이고, 위치가 같은 두 점은 없다.  출력첫째 줄부터 N개의 줄에 점을 정렬한 결과를 출력한다.풀이import sysN=int(sys.stdin.readline())list1=[]for _ in range(N):    x, y = map(int, sys.stdin.readline().split())    list1.append((x,y))for i in sorted(list1):    print(i[0],i[1])주의사항아래와 같이 단순히 N=int(input())을 쓰게되면 시간초과 에러가 나왔다.N=int(input())list1=[]for _ in range(N):    x, y = map(int, input().split())    list1.append((x,y))for i in sorted(list1):    print(i[0],i[1])일반적으로 백준 문제 중에서 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.",
         "url": "/baekjoon-11650"
     }
     ,
@@ -221,7 +230,7 @@ into the {body} of the default.hbs template -->
         "title": "백준 1427번 소트인사이드 (파이썬)",
             "author": "ygyu68",
             "category": "",
-            "content": " 백준 문제 풀이 관련 포스팅     백준 1427번: 소트인사이드    백준 11650: 좌표 정렬하기  문제배열을 정렬하는 것은 쉽다. 수가 주어지면, 그 수의 각 자리수를 내림차순으로 정렬해보자.  입력첫째 줄에 정렬하고자 하는 수 N이 주어진다. N은 1,000,000,000보다 작거나 같은 자연수이다.  출력첫째 줄에 자리수를 내림차순으로 정렬한 수를 출력한다.풀이주의사항",
+            "content": " 백준 문제 풀이 관련 포스팅     백준 1427번: 소트인사이드    백준 11650: 좌표 정렬하기    백준 11651: 좌표 정렬하기2  문제배열을 정렬하는 것은 쉽다. 수가 주어지면, 그 수의 각 자리수를 내림차순으로 정렬해보자.  입력첫째 줄에 정렬하고자 하는 수 N이 주어진다. N은 1,000,000,000보다 작거나 같은 자연수이다.  출력첫째 줄에 자리수를 내림차순으로 정렬한 수를 출력한다.풀이주의사항",
         "url": "/baekjoon-1427"
     }
     
