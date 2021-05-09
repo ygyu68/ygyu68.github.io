@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://ygyu68.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ygyu68.github.io/" rel="alternate" type="text/html" /><updated>2021-05-08T16:08:36+00:00</updated><id>https://ygyu68.github.io/</id><title type="html">Being a Data Scientist</title><subtitle>기계공학과 학생의 데이터 과학 공부 일지</subtitle><entry><title type="html">백준 1181 단어정렬 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-1181" rel="alternate" type="text/html" title="백준 1181 단어정렬 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-1181</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-1181">&lt;!--
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://ygyu68.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ygyu68.github.io/" rel="alternate" type="text/html" /><updated>2021-05-09T02:50:53+00:00</updated><id>https://ygyu68.github.io/</id><title type="html">Being a Data Scientist</title><subtitle>기계공학과 학생의 데이터 과학 공부 일지</subtitle><entry><title type="html">백준 18870 좌표압축 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-18870" rel="alternate" type="text/html" title="백준 18870 좌표압축 (파이썬)" /><published>2021-05-08T16:40:00+00:00</published><updated>2021-05-08T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-18870</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-18870">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
@@ -9,6 +9,65 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek18870.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;수직선 위에 N개의 좌표 X1, X2, …, XN이 있다. 이 좌표에 좌표 압축을 적용하려고 한다.&lt;/p&gt;
+
+&lt;p&gt;Xi를 좌표 압축한 결과 X’i의 값은 Xi &amp;gt; Xj를 만족하는 서로 다른 좌표의 개수와 같아야 한다.&lt;/p&gt;
+
+&lt;p&gt;X1, X2, …, XN에 좌표 압축을 적용한 결과 X’1, X’2, …, X’N를 출력해보자.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;입력&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;첫째 줄에 N이 주어진다.&lt;/p&gt;
+
+&lt;p&gt;둘째 줄에는 공백 한 칸으로 구분된 X1, X2, …, XN이 주어진다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;첫째 줄에 X’1, X’2, …, X’N을 공백 한 칸으로 구분해서 출력한다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;✨&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#18870 좌표압축&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dic1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dic1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;👍&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이 팁&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;set&lt;/code&gt;을 통해 중복값을 없애주고 &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted&lt;/code&gt;를 통해 순서대로 배치한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dic&lt;/code&gt;을 통해 각 키에 대한 값을 정해주고 순서대로 출력한다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary></entry><entry><title type="html">백준 1181 단어정렬 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-1181" rel="alternate" type="text/html" title="백준 1181 단어정렬 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-1181</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-1181">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek1181.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -49,7 +108,7 @@
 
 &lt;p&gt;👍&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이 팁&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;우선, &lt;code class=&quot;highlighter-rouge&quot;&gt;set&lt;/code&gt;을 통해 중복값을 없애주었다. 그리고 난 뒤  &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted()&lt;/code&gt;를 통해 길이와 상관없이 알파벳을 기준으로 정렬해주고 다시 한번 &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted(value, key=len)&lt;/code&gt;을 통해 길이를 기준으로 정렬을 해주었다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬</summary></entry><entry><title type="html">백준 11651 좌표정렬하기2 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-11651" rel="alternate" type="text/html" title="백준 11651 좌표정렬하기2 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-11651</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-11651">&lt;!--
+&lt;p&gt;우선, &lt;code class=&quot;highlighter-rouge&quot;&gt;set&lt;/code&gt;을 통해 중복값을 없애주었다. 그리고 난 뒤  &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted()&lt;/code&gt;를 통해 길이와 상관없이 알파벳을 기준으로 정렬해주고 다시 한번 &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted(value, key=len)&lt;/code&gt;을 통해 길이를 기준으로 정렬을 해주었다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary></entry><entry><title type="html">백준 11651 좌표정렬하기2 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-11651" rel="alternate" type="text/html" title="백준 11651 좌표정렬하기2 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-11651</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-11651">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
@@ -60,6 +119,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek11651.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -110,7 +170,7 @@
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;일반적으로 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬</summary></entry><entry><title type="html">백준 10814 나이순정렬 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-10814" rel="alternate" type="text/html" title="백준 10814 나이순정렬 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-10814</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-10814">&lt;!--
+&lt;p&gt;일반적으로 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary></entry><entry><title type="html">백준 10814 나이순정렬 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-10814" rel="alternate" type="text/html" title="백준 10814 나이순정렬 (파이썬)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-10814</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-10814">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
@@ -121,6 +181,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;C:\Users\abc\Desktop\assets\built\images\baek110814.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -162,7 +223,7 @@
 
 &lt;p&gt;👍&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이 팁&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sorted(list1, key=lambda k:k[0])&lt;/code&gt;를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;list1&lt;/code&gt;를 나이로만 정렬해주었다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬</summary></entry><entry><title type="html">파이썬 내포 함수(Comprehension)</title><link href="https://ygyu68.github.io/syntax-comprehension" rel="alternate" type="text/html" title="파이썬 내포 함수(Comprehension)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/syntax-comprehension</id><content type="html" xml:base="https://ygyu68.github.io/syntax-comprehension">&lt;!--
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sorted(list1, key=lambda k:k[0])&lt;/code&gt;를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;list1&lt;/code&gt;를 나이로만 정렬해주었다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary></entry><entry><title type="html">파이썬 내포 함수(Comprehension)</title><link href="https://ygyu68.github.io/syntax-comprehension" rel="alternate" type="text/html" title="파이썬 내포 함수(Comprehension)" /><published>2021-05-07T16:40:00+00:00</published><updated>2021-05-07T16:40:00+00:00</updated><id>https://ygyu68.github.io/syntax-comprehension</id><content type="html" xml:base="https://ygyu68.github.io/syntax-comprehension">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
@@ -197,6 +258,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek11650.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -246,7 +308,7 @@
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;일반적으로 백준 문제 중에서 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬</summary></entry><entry><title type="html">통계학 강좌(1) - 통계학의 기본</title><link href="https://ygyu68.github.io/statistics-basic" rel="alternate" type="text/html" title="통계학 강좌(1) - 통계학의 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/statistics-basic</id><content type="html" xml:base="https://ygyu68.github.io/statistics-basic">&lt;p&gt;이 글은 통계학 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="statistics" /><summary type="html">이 글은 통계학 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">백준 1427번 소트인사이드 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-1427" rel="alternate" type="text/html" title="백준 1427번 소트인사이드 (파이썬)" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-1427</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-1427">&lt;!--
+&lt;p&gt;일반적으로 백준 문제 중에서 시간초과 에러가 나오게 될 경우 위의 풀이와 같이 코드를 작성하면 해결할 수 있다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary></entry><entry><title type="html">통계학 강좌(1) - 통계학의 기본</title><link href="https://ygyu68.github.io/statistics-basic" rel="alternate" type="text/html" title="통계학 강좌(1) - 통계학의 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/statistics-basic</id><content type="html" xml:base="https://ygyu68.github.io/statistics-basic">&lt;p&gt;이 글은 통계학 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="statistics" /><summary type="html">이 글은 통계학 관련 첫 포스팅 입니다.</summary></entry><entry><title type="html">백준 1427번 소트인사이드 (파이썬)</title><link href="https://ygyu68.github.io/baekjoon-1427" rel="alternate" type="text/html" title="백준 1427번 소트인사이드 (파이썬)" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/baekjoon-1427</id><content type="html" xml:base="https://ygyu68.github.io/baekjoon-1427">&lt;!--
 새롭게 추가한 내용 (목차 만들기)
 --&gt;
 
@@ -257,6 +319,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek1427.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -283,4 +346,4 @@
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이&lt;/span&gt;&lt;/strong&gt;
 &lt;script src=&quot;https://gist.github.com/ygyu68/0dbbfb448bb1cda237685ba2b6a32e7f.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;주의사항&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬</summary></entry><entry><title type="html">R 강좌(1) - R 기본</title><link href="https://ygyu68.github.io/R-basic" rel="alternate" type="text/html" title="R 강좌(1) - R 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/R-basic</id><content type="html" xml:base="https://ygyu68.github.io/R-basic">&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="r" /><summary type="html">이 글은 R 관련 첫 포스팅 입니다.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;주의사항&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="baekjoon" /><summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary></entry><entry><title type="html">R 강좌(1) - R 기본</title><link href="https://ygyu68.github.io/R-basic" rel="alternate" type="text/html" title="R 강좌(1) - R 기본" /><published>2021-05-04T16:40:00+00:00</published><updated>2021-05-04T16:40:00+00:00</updated><id>https://ygyu68.github.io/R-basic</id><content type="html" xml:base="https://ygyu68.github.io/R-basic">&lt;p&gt;이 글은 R 관련 첫 포스팅 입니다.&lt;/p&gt;</content><author><name>Gyuseok Hwang</name></author><category term="r" /><summary type="html">이 글은 R 관련 첫 포스팅 입니다.</summary></entry></feed>
