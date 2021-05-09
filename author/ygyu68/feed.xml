@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://ygyu68.github.io/author/ygyu68/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ygyu68.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-09T02:50:53+00:00</updated>
+  <updated>2021-05-09T12:41:07+00:00</updated>
   <id>https://ygyu68.github.io/author/ygyu68/feed.xml</id>
 
   
@@ -12,11 +12,11 @@
   
 
   
-    <title type="html">Being a Data Scientist | </title>
+    <title type="html">Data Engineer’s Note | </title>
   
 
   
-    <subtitle>기계공학과 학생의 데이터 과학 공부 일지</subtitle>
+    <subtitle>4대역학 보다 데이터 과학</subtitle>
   
 
   
@@ -30,6 +30,162 @@
   
   
 
+  
+    <entry>
+      <title type="html">백준 1008 피보나치함수 (파이썬)</title>
+      <link href="https://ygyu68.github.io/baekjoon-1008" rel="alternate" type="text/html" title="백준 1008 피보나치함수 (파이썬)" />
+      <published>2021-05-08T16:40:00+00:00</published>
+      <updated>2021-05-08T16:40:00+00:00</updated>
+      <id>https://ygyu68.github.io/baekjoon-1008</id>
+      <content type="html" xml:base="https://ygyu68.github.io/baekjoon-1008">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 백준 문제 풀이 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1427&quot;&gt;백준 #1427: 소트인사이드&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11650&quot;&gt;백준 #11650: 좌표정렬하기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-11651&quot;&gt;백준 #11651: 좌표정렬하기2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #1008: 피보나치함수&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;문제&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다음 소스는 N번째 피보나치 수를 구하는 C++ 함수이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‐&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‐&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(3)&lt;/code&gt;을 호출하면 다음과 같은 일이 일어난다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(3)&lt;/code&gt;은 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(2)&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(1)&lt;/code&gt; (첫 번째 호출)을 호출한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(2)&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(1)&lt;/code&gt; (두 번째 호출)과 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(0)&lt;/code&gt;을 호출한다.&lt;/li&gt;
+  &lt;li&gt;두 번째 호출한 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(1)&lt;/code&gt;은 1을 출력하고 1을 리턴한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(0)&lt;/code&gt;은 0을 출력하고, 0을 리턴한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(2)&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(1)&lt;/code&gt;과 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(0)&lt;/code&gt;의 결과를 얻고, 1을 리턴한다.&lt;/li&gt;
+  &lt;li&gt;첫 번째 호출한 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(1)&lt;/code&gt;은 1을 출력하고, 1을 리턴한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(3)&lt;/code&gt;은 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(2)&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(1)&lt;/code&gt;의 결과를 얻고, 2를 리턴한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;1은 2번 출력되고, 0은 1번 출력된다. N이 주어졌을 때, &lt;code class=&quot;highlighter-rouge&quot;&gt;fibonacci(N)&lt;/code&gt;을 호출했을 때, 0과 1이 각각 몇 번 출력되는지 구하는 프로그램을 작성하시오.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;입력&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;첫째 줄에 테스트 케이스의 개수 T가 주어진다.&lt;/p&gt;
+
+&lt;p&gt;각 테스트 케이스는 한 줄로 이루어져 있고, N이 주어진다. N은 40보다 작거나 같은 자연수 또는 0이다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;각 테스트 케이스마다 0이 출력되는 횟수와 1이 출력되는 횟수를 공백으로 구분해서 출력한다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;✨&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#1003 피보나치 함수&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;one&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;👍&lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;풀이 팁&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;N&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;0&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;1&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;2&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;3&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;4&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;5&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;6&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0 출력 수&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1 출력 수&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;결국, 원하는 출력은 ‘0 출력 수’ 그리고 ‘1 출력 수’ 각각의 피보나치 수열인 것을 알 수 있다. 따라서, ‘0 출력 수’를 나타내는 리스트 &lt;code class=&quot;highlighter-rouge&quot;&gt;zero&lt;/code&gt; 그리고 ‘1 출력 수’를 나타내는 리스트 &lt;code class=&quot;highlighter-rouge&quot;&gt;one&lt;/code&gt;을 각각 &lt;code class=&quot;highlighter-rouge&quot;&gt;[1,0]&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;[0,1]&lt;/code&gt;로 만든 뒤 각 인덱스에 각각의 피보나치 수열 값을 추가해주고 마지막으로 그 값을 출력함으로써 원하는 답을 얻을 수 있다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Gyuseok Hwang</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="baekjoon" />
+      
+
+      
+        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축 백준 #1008: 피보나치함수</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">백준 18870 좌표압축 (파이썬)</title>
@@ -49,6 +205,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #1008: 피보나치함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek18870.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -116,7 +273,7 @@
       
 
       
-        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary>
+        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축 백준 #1008: 피보나치함수</summary>
       
 
       
@@ -199,6 +356,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #1008: 피보나치함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;C:\Users\abc\Desktop\assets\built\images\baek110814.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -261,7 +419,7 @@
       
 
       
-        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary>
+        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축 백준 #1008: 피보나치함수</summary>
       
 
       
@@ -286,6 +444,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #1008: 피보나치함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek11651.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -357,7 +516,7 @@
       
 
       
-        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary>
+        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축 백준 #1008: 피보나치함수</summary>
       
 
       
@@ -382,6 +541,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #1008: 피보나치함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek1181.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -443,7 +603,7 @@
       
 
       
-        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary>
+        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축 백준 #1008: 피보나치함수</summary>
       
 
       
@@ -468,6 +628,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #1008: 피보나치함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek11650.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -538,7 +699,7 @@
       
 
       
-        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary>
+        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축 백준 #1008: 피보나치함수</summary>
       
 
       
@@ -597,6 +758,7 @@
     &lt;li&gt;&lt;a href=&quot;./baekjoon-1181&quot;&gt;백준 #1181: 단어정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #10814: 나이순정렬&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #18870: 좌표압축&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./baekjoon-10814&quot;&gt;백준 #1008: 피보나치함수&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;..\assets\built\images\baek1427.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -644,7 +806,7 @@
       
 
       
-        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축</summary>
+        <summary type="html">다른 백준 문제 풀이 보러가기👀 백준 #1427: 소트인사이드 백준 #11650: 좌표정렬하기 백준 #11651: 좌표정렬하기2 백준 #1181: 단어정렬 백준 #10814: 나이순정렬 백준 #18870: 좌표압축 백준 #1008: 피보나치함수</summary>
       
 
       
