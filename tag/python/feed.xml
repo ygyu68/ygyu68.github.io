@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://ygyu68.github.io/tag/python/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ygyu68.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-09T12:41:07+00:00</updated>
+  <updated>2021-05-10T11:38:21+00:00</updated>
   <id>https://ygyu68.github.io/tag/python/feed.xml</id>
 
   
@@ -32,6 +32,88 @@
 
   
     <entry>
+      <title type="html">파이썬 메모이제이션(Memoization)</title>
+      <link href="https://ygyu68.github.io/syntax-memoization" rel="alternate" type="text/html" title="파이썬 메모이제이션(Memoization)" />
+      <published>2021-05-09T16:40:00+00:00</published>
+      <updated>2021-05-09T16:40:00+00:00</updated>
+      <id>https://ygyu68.github.io/syntax-memoization</id>
+      <content type="html" xml:base="https://ygyu68.github.io/syntax-memoization">&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;python: 내포함수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-memoization&quot;&gt;python: 메모이제이션&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;메모이제이션memoization&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;메모이제이션(Memoization)&lt;/span&gt;&lt;/h1&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;개요&quot;&gt;개요&lt;/h2&gt;
+
+&lt;p&gt;동일한 계산을 여러 번 반복해야 하는 경우, 한 번 계산한 결과를 메모리에 저장해 두었다가 필요한 경우 꺼내서 사용함으로써 중복 계산을 방지하는 기법.&lt;/p&gt;
+
+&lt;p&gt;동적 계획법의 핵심이 되는 기술로, 메모리라는 공간 비용을 투입해서 계산에 소요되는 시간 비용을 줄이는 방법이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;예시&quot;&gt;예시&lt;/h2&gt;
+
+&lt;p&gt;피보나치 수열을 일반적인 방법과 메모이제이션을 활용한 방법으로 구해보자.&lt;/p&gt;
+
+&lt;p&gt;(1) 일반적인 방법&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(2) 메모이제이션을 활용한 방법&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;max_value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_value&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;아래와 같이 메모이제이션을 활용하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt;이라는 리스트에 이미 계산한 피보나치 값을 넣어 두고 그 값을 필요로 하는 경우 바로 가져올 수 있도록 한다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Gyuseok Hwang</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html">다른 자료 보러가기👀 python: 내포함수 python: 메모이제이션</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">파이썬 내포 함수(Comprehension)</title>
       <link href="https://ygyu68.github.io/syntax-comprehension" rel="alternate" type="text/html" title="파이썬 내포 함수(Comprehension)" />
       <published>2021-05-07T16:40:00+00:00</published>
@@ -43,10 +125,15 @@
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬: 내포함수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;python: 내포함수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-memoization&quot;&gt;python: 메모이제이션&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;내포함수&quot;&gt;내포함수&lt;/h1&gt;
 
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;내포함수comprehension&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;내포함수(Comprehension)&lt;/span&gt;&lt;/h1&gt;
+
+&lt;hr /&gt;
 &lt;p&gt;파이썬에서는 각종 &lt;span style=&quot;color:red&quot;&gt;내포함수&lt;/span&gt;를 사용할 수 있다. 예를 들어,&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
@@ -82,7 +169,7 @@
       
 
       
-        <summary type="html">다른 자료 보러가기👀 파이썬: 내포함수 내포함수</summary>
+        <summary type="html">다른 자료 보러가기👀 python: 내포함수 python: 메모이제이션</summary>
       
 
       

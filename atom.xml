@@ -8,6 +8,29 @@
     
       
       <item>
+        <title>파이썬 메모이제이션(Memoization)</title>
+        
+          <description>&lt;!--
+새롭게 추가한 내용 (목차 만들기)
+--&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;python: 내포함수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-memoization&quot;&gt;python: 메모이제이션&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 09 May 2021 16:40:00 +0000</pubDate>
+        <link>
+        https://ygyu68.github.io/syntax-memoization</link>
+        <guid isPermaLink="true">https://ygyu68.github.io/syntax-memoization</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>백준 18870 좌표압축 (파이썬)</title>
         
           <description>&lt;!--
@@ -156,9 +179,9 @@
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; 다른 자료 보러가기👀&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;파이썬: 내포함수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-comprehension&quot;&gt;python: 내포함수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./syntax-memoization&quot;&gt;python: 메모이제이션&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;내포함수&quot;&gt;내포함수&lt;/h1&gt;
 
 </description>
         

@@ -188,6 +188,15 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "syntax-memoization": {
+        "title": "파이썬 메모이제이션(Memoization)",
+            "author": "ygyu68",
+            "category": "",
+            "content": " 다른 자료 보러가기👀    python: 내포함수    python: 메모이제이션메모이제이션(Memoization)개요동일한 계산을 여러 번 반복해야 하는 경우, 한 번 계산한 결과를 메모리에 저장해 두었다가 필요한 경우 꺼내서 사용함으로써 중복 계산을 방지하는 기법.동적 계획법의 핵심이 되는 기술로, 메모리라는 공간 비용을 투입해서 계산에 소요되는 시간 비용을 줄이는 방법이다.예시피보나치 수열을 일반적인 방법과 메모이제이션을 활용한 방법으로 구해보자.(1) 일반적인 방법def fibonacci(a):    if a &lt; 2:        return a    return fibonacci(a-2) + fibonacci(a-1)(2) 메모이제이션을 활용한 방법max_value=int(input())m=[0]*max_valuedef fibonacci(a):    if a &lt; 2:        return a    elif m[a]:        return m[a]    m[a] = fibonacci(a-1)+fibonacci(a-2)    return m[a]        아래와 같이 메모이제이션을 활용하면 m이라는 리스트에 이미 계산한 피보나치 값을 넣어 두고 그 값을 필요로 하는 경우 바로 가져올 수 있도록 한다.",
+        "url": "/syntax-memoization"
+    }
+    ,
+    
     "baekjoon-18870": {
         "title": "백준 18870 좌표압축 (파이썬)",
             "author": "ygyu68",
@@ -237,7 +246,7 @@ into the {body} of the default.hbs template -->
         "title": "파이썬 내포 함수(Comprehension)",
             "author": "ygyu68",
             "category": "",
-            "content": " 다른 자료 보러가기👀    파이썬: 내포함수내포함수파이썬에서는 각종 내포함수를 사용할 수 있다. 예를 들어,list1 = []for x in range(5):    list1.append(x**2)list1와 같은 코드블록을 아래와 같이 표현하는 것이다.list1 = [x**2 for x in range(5)]list1위 2개의 코드블록의 결과는 모두 [0, 1, 4, 9, 16]이 된다. 또한 함수 sum()을 통해 주어진 리스트(llist)의 합을 구할 수 있다. 즉, sum([x**2 for x in range(5)])  의 결과는 30이 된다.",
+            "content": " 다른 자료 보러가기👀    python: 내포함수    python: 메모이제이션내포함수(Comprehension)파이썬에서는 각종 내포함수를 사용할 수 있다. 예를 들어,list1 = []for x in range(5):    list1.append(x**2)list1와 같은 코드블록을 아래와 같이 표현하는 것이다.list1 = [x**2 for x in range(5)]list1위 2개의 코드블록의 결과는 모두 [0, 1, 4, 9, 16]이 된다. 또한 함수 sum()을 통해 주어진 리스트(llist)의 합을 구할 수 있다. 즉, sum([x**2 for x in range(5)])  의 결과는 30이 된다.",
         "url": "/syntax-comprehension"
     }
     ,
